@@ -1,3 +1,19 @@
+# ==============================================================================
+# Script : automatic_fem.R
+# Auteur : Hugo CHAMBON
+# Date de création : Mai 2024
+# Modifié par : Racim ZENATI
+# Dernière modification : Juin 2025
+# Objet : Lancer automatiquement l'algorithme FisherEM sur un jeu de données
+#         en testant différentes valeurs de K (nombre de classes) et un ou plusieurs
+#         modèles de type DLM (Diagonal/Full, Equal/Unequal variance...).
+#         Le script sélectionne automatiquement la meilleure classification
+#         selon un critère (par défaut : log-vraisemblance) via une procédure
+#         de type dichotomique.
+#         Les résultats sont sauvegardés sous forme d'objets RDS, contenant
+#         la meilleure partition pour chaque configuration testée.
+# ==============================================================================
+
 ##Imports
 
 library(gdata, include.only = "mv")
