@@ -44,8 +44,8 @@ Les résultats de classification sont comparés visuellement à l’aide de la f
 - la projection des données dans l’espace discriminant
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="images/icl_plot_example.png" alt="ICL vs K par modéle" width="45%"/>
-  <img src="images/discriminant_projection.png" alt="ICL vs K par modéle" width="45%"/>
+  <img src="images/_ICL_vs_K_barplot.png" alt="ICL vs K par modéle" width="45%"/>
+  <img src="images/_ICL_vs_K_par_model.png" alt="ICL vs K par modéle" width="45%"/>
 </div>
 4. **Sélection de l’optimum** selon le critère `ICL`  
 5. **Affichage des dispertions de chaque sous-classe** avec `mspsplit_paper()`  
