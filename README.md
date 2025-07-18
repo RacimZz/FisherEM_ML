@@ -111,4 +111,4 @@ Un script permet de fusionner automatiquement les 15 visualisations en une seule
 
 - **Racim Zenati** – Étudiant en cycle ingénieur à l’INP-ENSIMAG (2éme année licence informatique au moment du stage)
 - Stage de recherche réalisé au sein de l’**IPAG** (Institut de Planétologie et d’Astrophysique de Grenoble),  
-  sous la supervision de **Didier Fraix-Burnet** (chercheur CNRS) et **Hugo Chambon** (doctorant en statistique appliquée à l’astrophysique)
+  sous la supervision de **Didier Fraix-Burnet** (chercheur CNRS) et **Hugo Chambon** (doctorant en astrophysique)
