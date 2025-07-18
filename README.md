@@ -36,25 +36,23 @@ L’algorithme **FisherEM** repose sur trois idées clés :
 
 1. **Chargement des spectres SDSS**
 2. **Application de FisherEM sur plusieurs configurations (nombre de classes K et modèles prédéfinis)**  
-3. Visualisation des graphes de comparaison entre les classifications
-
+3. **Visualisation des graphes de comparaison entre les classifications**
 Les résultats de classification sont comparés visuellement à l’aide de la fonction `FEMrecap()`, qui affiche :
-
-- l’évolution du critère ICL selon `K`
-- la projection des données dans l’espace discriminant
+  - l’évolution du critère ICL selon `K`
+  - la projection des données dans l’espace discriminant
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/_ICL_vs_K_barplot.png" alt="ICL vs K par modéle" width="45%"/>
   <img src="images/_ICL_vs_K_par_model.png" alt="ICL vs K par modéle" width="45%"/>
 </div>
-4. **Sélection de l’optimum** selon le critère `ICL`  
+
+4. **Sélection de l’optimum** selon le critère `ICL`
 5. **Affichage des dispertions de chaque sous-classe** avec `mspsplit_paper()`  
 Pour chaque sous-classe, `mspsplit_paper()` affiche :
+  - La courbe moyenne du spectre
+  - Les bandes de dispersion (± écart-type ou quantiles)
 
-- La courbe moyenne du spectre
-- Les bandes de dispersion (± écart-type ou quantiles)
-
-![Optimum obtenue avec `model = DBk | K = 15`](images/classification_optimum.png)
+![Optimum obtenue avec `model = DBk | K = 15`](images/classification_optimum.jpg)
 
 6. **Sous classification de chaque classe de l'optimum** mêmes étapes que la classification 
 
