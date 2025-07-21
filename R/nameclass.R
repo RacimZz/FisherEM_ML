@@ -1,3 +1,16 @@
+# ==============================================================================
+# Script : nameclass.R
+# Auteurs : 
+# Date de création : Juillet 2025
+# Dernière modification : Juillet 2025
+# Objet :
+# Ce script assigne un nom unique à chaque galaxie de toutes les sous-classifications effectué auparavant, 
+# en combinant :
+#   - la classification principale en 15 classes (A à O),
+#   - la meilleure sous-classification locale trouvée automatiquement par classe.
+# Le résultat est sauvegardé dans un fichier CSV avec un nom de sous-classe par spectre.
+# ==============================================================================
+
 library(FisherEM)
 extract_all_rdata_rds <- function(root_dir) {
   all_files <- list.files(root_dir, pattern = "\\.(rds|RDS|rdata|RData)$", recursive = TRUE, full.names = TRUE)
@@ -81,6 +94,6 @@ for (i in 1:15) {
 df_subclasses <- data.frame(index = 1:length(subclass_names),
                             subclass = subclass_names)
 
-# Optionnel : écrire dans un CSV
+# écrire dans un CSV
 write.csv(df_subclasses, "nameclass_standardise.csv", row.names = FALSE)
 quit(save="no")
