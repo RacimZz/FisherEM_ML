@@ -1,3 +1,23 @@
+# ==============================================================================
+# Script : results_mspsplit.R
+# Auteur : Racim ZENATI
+# Date : Juillet 2025
+# Objet :
+# Ce script lit les fichiers PDF de sous-classification (1 par classe principale),
+# extrait la première page de chacun, y ajoute un titre personnalisé ("Classe i"),
+# et génère un montage final en grille (5 lignes x 3 colonnes).
+# 
+# Résultat : un PDF unique `sous_classification_finale.pdf` contenant un aperçu
+# structuré des sous-classifications optimales (ICL) des 15 classes.
+#
+# 🔧 Dépendance :
+#   - package `magick` (installable via `install.packages("magick")`)
+#
+# 📂 Organisation attendue :
+#   - Fichiers d'entrée : `PDFs/sous_classif/class_i.pdf` pour i = 1..15
+#   - Fichier de sortie : `sous_classification_finale.pdf` dans le dossier courant
+# ==============================================================================
+
 library(magick)
 
 # Chemin des fichiers PDF
