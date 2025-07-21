@@ -1,3 +1,16 @@
+# ==============================================================================
+# Script : mspsplit_sous_classification.R
+# Auteurs : Racim ZENATI
+# Date de création : Juin 2025
+# Dernière modification : Juillet 2025
+# Objet : 
+# Génération automatique de courbes de moyennes spectraux pour les sous-classes
+# d’un clustering FisherEM appliqué aux spectres SDSS. Le script :
+#   - extrait les meilleures classifications FEM par classe principale,
+#   - génère des visualisations `mspsplit_paper` avec bandes de dispersion,
+#   - enregistre les graphiques dans des fichiers PDF par classe.
+# ==============================================================================
+
 library(FisherEM)
 extract_all_rdata_rds <- function(root_dir) {
   all_files <- list.files(root_dir, pattern = "\\.(rds|RDS|rdata|RData)$", recursive = TRUE, full.names = TRUE)
