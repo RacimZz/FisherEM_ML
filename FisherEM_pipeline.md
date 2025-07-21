@@ -74,7 +74,7 @@ Utilisé dans **toutes les étapes suivantes**.
 
 ### 8. Attribution des noms de sous-classes normalisés
 
-- **Script** : `create_nameclass_csv.R`
+- **Script** : `nameclass.R`
 - **But** : Créer un vecteur donnant à chaque individu un nom de sous-classe du type `A1`, `C5`, `M2`, etc.
 - **Logique** :
     - Les lettres `A à O` représentent les 15 classes principales
@@ -93,7 +93,7 @@ Utilisé dans **toutes les étapes suivantes**.
 | `run_fem_auto_sous_classification.R` | Appliquer FisherEM sur chaque classe séparément |
 | `plot_FEMrecap_sous_classification.R` | Boucle sur les 15 classes pour tracer les ICL |
 | `results_mspsplit.R` | Crée le PDF final avec toutes les sous-classifications en grille |
-| `create_nameclass_csv.R` | Associe à chaque individu un nom de sous-classe au format `A1`...`O5` |
+| `nameclass.R` | Associe à chaque individu un nom de sous-classe au format `A1`...`O5` |
 
 ---
 
