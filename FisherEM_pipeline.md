@@ -70,7 +70,7 @@ Utilisé dans **toutes les étapes suivantes**.
 - **Script** : `results_mspsplit.R`
 - **But** : Fusionner les 15 PDF en **une grille 5x3** au format PDF final `sous_classification_finale.pdf`
 
-![Sous classification finale obtenue](PDFs/sous_classification_finale.pdf)
+[La partie mspsplit du README.md.](PDFs/sous_classification_finale.pdf)
 
 ---
 
