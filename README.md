@@ -3,7 +3,6 @@
 ![Research](https://img.shields.io/badge/Type-Research%20Project-blueviolet)
 ![Affiliation](https://img.shields.io/badge/Hosted_at-IPAG_Grenoble-blue)
 ![Uses FisherEM](https://img.shields.io/badge/package-FisherEM-orange)
-![Platform](https://img.shields.io/badge/Platform-IPAG%20HPC-lightblue)
 ![Last Updated](https://img.shields.io/badge/last%20update-July%202025-blue)
 
 # 🌌 Classification non supervisée des spectres SDSS avec FisherEM
