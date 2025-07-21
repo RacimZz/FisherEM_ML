@@ -91,7 +91,7 @@ Ces modèles diffèrent par la structure de covariance utilisée dans l’espace
 Chaque sous-classe est représentée par :
 - Une **courbe moyenne**
 - Des **bandes de dispersion** (± écart-type ou quantiles 10–90%)
-- Un titre du type **"Classe X – N = ..."**
+- Un titre du type **"Classe X = ..."**
 
 Un script permet de fusionner automatiquement les 15 visualisations en une seule image récapitulative, facilitant la lecture et l’interprétation.
 
