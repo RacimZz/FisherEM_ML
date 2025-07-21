@@ -1,5 +1,5 @@
 
-# 🧠 FisherEM SDSS Spectra Classification Pipeline (R version)
+# 🧠 FisherEM SDSS Spectra Classification Pipeline 
 
 Ce repository R contient l'ensemble des scripts que j'ai développés et exécutés dans le cadre de mon stage au laboratoire IPAG (Institut de Planétologie et d'Astrophysique de Grenoble), visant à effectuer une classification non-supervisée de spectres de galaxies SDSS à l'aide de l'algorithme **Fisher-EM**.
 
