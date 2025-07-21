@@ -82,7 +82,7 @@ Ces modèles diffèrent par la structure de covariance utilisée dans l’espace
 - Visualisation de la structure interne de chaque classe via :
   - Moyenne des spectres par sous-groupe
   - Bandes de dispersion (quantiles ou écart-type)
-- Fusion des figures individuelles dans un seul montage global (`montage_15_classes.pdf`)
+- Fusion des figures individuelles dans un seul montage global (`sous_classification_finale.pdf`)
 
 ---
 
