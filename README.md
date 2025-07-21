@@ -23,8 +23,8 @@ Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en
   - `n` = nombre de spectres (~302 248)
   - `p` = nombre de longueurs d’onde (~1437)
 - **Prétraitement** :
-  - Centrage/réduction ligne à ligne
-  - Interpolation et normalisation sur une plage spécifique (ex. : 6400–6800 Å)
+  - Centrage/réduction (standardisation).
+  - Interpolation et normalisation sur une plage spécifique (ex. : 6400–6800 Å).
 
 ---
 
