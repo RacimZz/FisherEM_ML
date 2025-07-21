@@ -98,14 +98,6 @@ Un script permet de fusionner automatiquement les 15 visualisations en une seule
 - `magick` : fusion d’images PDF
 ---
 
-## 📁 Fichiers importants
-
-- `automatic_fem.R` : classification automatique classe par classe par dichotomie
-- `mspsplit_paper.R` : affichage détaillé des sous-classes (dispertion,± écart-type ou quantiles 10–90%)
-- `femrecap.R` : résumé graphique des valeurs des critères obtenues
-- `classification_finale_SDSS.pdf` : figure finale combinée
-
----
 
 ## ✏️ Auteurs
 
