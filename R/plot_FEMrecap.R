@@ -1,3 +1,18 @@
+# ==============================================================================
+# Script : plot_FEMrecap.R
+# Auteurs : Racim ZENATI
+# Date de création : Juin 2025
+# Dernière modification : 
+# Objet :
+# Ce script permet de charger l’ensemble des résultats de classification 
+# (issus d’une exploration FisherEM avec différents modèles/K/...),
+# puis génère des visualisations automatiques via `FEMrecap()` :
+#   - Courbes ICL vs K par modèle
+#   - Barplot des ICL moyens par modèle
+#   - Sauvegarde automatique dans le dossier "figures/"
+# Il permet ainsi d’identifier le meilleur couple (modèle, K) global.
+# ==============================================================================
+
 library(FisherEM)
 extract_all_rdata_rds <- function(root_dir) {
   all_files <- list.files(root_dir, pattern = "\\.(rds|RDS|rdata|RData)$", recursive = TRUE, full.names = TRUE)
@@ -41,6 +56,4 @@ results <- extract_all_rdata_rds("results/")
 source("FEMrecap.R")
 
 results_fem_only <- Filter(function(x) class(x) == "fem", results)
-icl_values <- sapply(results_fem_only, function(x) x$allCriteria$icl)
-
 FEMrecap(results_fem_only, leg = "topright", printall = TRUE, file = "figures/")
