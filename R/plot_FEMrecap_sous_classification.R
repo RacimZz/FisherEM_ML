@@ -1,3 +1,24 @@
+# ==============================================================================
+# Script : plot_FEMrecap_sous_classification.R
+# Auteur : Racim ZENATI
+# Date : Juillet 2025
+# Objet :
+# Ce script génère automatiquement les courbes ICL de sous-classifications
+# (FisherEM) pour les 15 classes principales (A à O).
+#
+# Pour chaque sous-répertoire `sous_classif/class_i/`, le script :
+#   - extrait tous les fichiers .rds/.RData
+#   - filtre les objets de classe "fem"
+#   - appelle la fonction `FEMrecap()` pour générer :
+#       * les courbes ICL vs K
+#       * le barplot des ICL moyens par modèle
+#       * les enregistre dans le dossier `figures/class_i/`
+#
+# ⚠️ : Assure-toi que la structure des dossiers est correcte :
+#       /sous_classif/class_1/, ..., /class_15/
+#       et que FEMrecap.R est bien présent dans le même dossier que ce script.
+# ==============================================================================
+
 library(FisherEM)
 extract_all_rdata_rds <- function(root_dir) {
   all_files <- list.files(root_dir, pattern = "\\.(rds|RDS|rdata|RData)$", recursive = TRUE, full.names = TRUE)
