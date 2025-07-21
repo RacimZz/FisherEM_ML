@@ -40,7 +40,7 @@ Utilisé dans **toutes les étapes suivantes**.
 - **Fonction clé** : `mspsplit_paper()`
 - **But** : Afficher les courbes moyennes + dispersion (quantiles) pour chaque groupe de la classification `DBk K=15`
 - **Exécution** : La boucle est à enlever, et on exécute le contenue de celle ci sur la classification `DBk K=15`
-- **Output** : 1 PDFs, comme celui affiché sur [La partie mspsplit sur le README.md](README.md)
+- **Output** : 1 PDFs, comme celui affiché sur [La partie mspsplit du README.md.](README.md)
 
 
 ---
