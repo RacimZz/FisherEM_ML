@@ -1,3 +1,11 @@
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Language](https://img.shields.io/badge/Made_with-R-1f425f.svg?logo=R)
+![Research](https://img.shields.io/badge/Type-Research%20Project-blueviolet)
+![Affiliation](https://img.shields.io/badge/Hosted_at-IPAG_Grenoble-blue)
+![Uses FisherEM](https://img.shields.io/badge/package-FisherEM-orange)
+![Platform](https://img.shields.io/badge/Platform-IPAG%20HPC-lightblue)
+![Last Updated](https://img.shields.io/badge/last%20update-July%202025-blue)
+
 # 🌌 Classification non supervisée des spectres SDSS avec FisherEM
 
 Ce module a pour but de classer automatiquement des spectres galactiques issus de la base de données **SDSS** (Sloan Digital Sky Survey) à l’aide de l’algorithme **FisherEM**, une méthode probabiliste alliant **modélisation par mélanges gaussiens** et **réduction de dimension discriminante**.
