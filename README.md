@@ -67,10 +67,9 @@ Pour chaque sous-classe, `mspsplit_paper()` affiche :
 ## 📚 Modèles disponibles dans FisherEM
 
 La classification est testée sur plusieurs modèles gaussiens :
-
-- `"AkjBk"`, `"AkjBkQk"`, `"AjBkQk"`, `"AjBQk"`
-- `"DkBk"`, `"DkBQk"`, `"DBk"`, `"DBkQk"`
-- `"AB"`, `"ABQk"`
+'DkBk','DkB','DBk','DB','AkjBk','AkjB','AkBk','AkB','AB'
+- `"AkBk"`, `"AkB"`, `"AkjB"`, `"AkjBk"`,`"AB"`
+- `"DB"`, `"DBk"`, `"DkB"`, `"DkBk"`
 
 Ces modèles diffèrent par la structure de covariance utilisée dans l’espace discriminant.
 
