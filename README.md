@@ -7,8 +7,12 @@
 
 # 🌌 Classification non supervisée des spectres SDSS avec FisherEM
 
-Ce module a pour but de classer automatiquement des spectres galactiques issus de la base de données **SDSS** (Sloan Digital Sky Survey) à l’aide de l’algorithme **FisherEM**, une méthode probabiliste alliant **modélisation par mélanges gaussiens** et **réduction de dimension discriminante**.
+Ce projet s’inspire de l’étude menée par **M. Didier Fraix-Burnet et al.**, qui appliquait l’algorithme **FisherEM** à la classification automatique de spectres galactiques en combinant modélisation par mélanges gaussiens et réduction de dimension discriminante.  
+Nous proposons ici une ré-implémentation de cette méthode en utilisant des **données standardisées** issues de la même base de données **SDSS** (Sloan Digital Sky Survey). Cette approche vise à améliorer la reproductibilité, la robustesse et la comparabilité des résultats.  
+Pour plus d’informations sur l’étude originale, [voir l'article](https://ui.adsabs.harvard.edu/abs/2021A%26A...649A..53F/abstract).
+
 ---
+
 
 ## 🔍 Objectif
 
