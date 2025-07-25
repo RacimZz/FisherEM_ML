@@ -7,7 +7,7 @@
 
 # 🌌 Classification non supervisée des spectres SDSS avec FisherEM
 
-Ce projet s’inspire de l’étude menée par **M. Didier Fraix-Burnet et al.**, qui appliquait l’algorithme **FisherEM** à la classification automatique de spectres galactiques en combinant modélisation par mélanges gaussiens et réduction de dimension discriminante.  
+Ce projet s’inspire de l’étude menée par **M. Didier Fraix-Burnet et al.**, qui appliquait l’algorithme **FisherEM** à la classification automatique de spectres de galaxies en combinant modélisation par mélanges gaussiens et réduction de dimension discriminante.  
 Nous proposons ici une ré-implémentation de cette méthode en utilisant des **données standardisées** issues de la même base de données **SDSS** (Sloan Digital Sky Survey). Cette approche vise à améliorer la reproductibilité, la robustesse et la comparabilité des résultats.  
 Pour plus d’informations sur l’étude originale, [voir l'article](https://ui.adsabs.harvard.edu/abs/2021A%26A...649A..53F/abstract).
 
@@ -16,7 +16,7 @@ Pour plus d’informations sur l’étude originale, [voir l'article](https://ui
 
 ## 🔍 Objectif
 
-Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en identifiant des **sous-classes morpho-spectrales** selon des critères structurels et physiques (formes de raies, intensité, décalage spectral, etc.), **sans connaissance préalable des classes**.
+Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en identifiant des **sous-classes spectrales** selon des critères structurels et physiques (formes de raies, intensité, décalage spectral, etc.), **sans connaissance préalable des classes**.
 
 ---
 
@@ -37,7 +37,7 @@ Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en
 L’algorithme **FisherEM** repose sur trois idées clés :
 
 1. **Modélisation** : chaque cluster est un mélange gaussien dans un sous-espace discriminant
-2. **Réduction supervisée non supervisée** : l’espace projeté de dimension `d = min(K - 1, p - 1)` est obtenu par maximisation du critère de **Fisher** (ratio interclasse/intraclasse)
+2. **Réduction de dimension** : l’espace projeté de dimension `d = min(K - 1, p - 1)` est obtenu par maximisation du critère de **Fisher** (ratio interclasse/intraclasse)
 3. **Estimation par EM** : les probabilités d’appartenance sont ajustées à chaque itération
 
 ---
