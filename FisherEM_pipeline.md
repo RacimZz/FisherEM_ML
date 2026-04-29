@@ -1,9 +1,9 @@
 
-# 🧠 FisherEM SDSS Spectra Classification Pipeline 
+# FisherEM SDSS Spectra Classification Pipeline 
 
 Ce repository R contient l'ensemble des scripts que j'ai développés et exécutés dans le cadre de mon stage au laboratoire IPAG (Institut de Planétologie et d'Astrophysique de Grenoble), visant à effectuer une classification non-supervisée de spectres de galaxies SDSS à l'aide de l'algorithme **Fisher-EM**.
 
-## 📁 Structure du pipeline R
+## Structure du pipeline R
 
 ### 1. Prétraitement des données
 
@@ -85,7 +85,7 @@ Utilisé dans **toutes les étapes suivantes**.
 
 ---
 
-## 📄 Liste des fichiers R et rôles
+## Liste des fichiers R et rôles
 
 | Fichier | Rôle |
 |--------|------|
@@ -99,7 +99,7 @@ Utilisé dans **toutes les étapes suivantes**.
 
 ---
 
-## ⚙️ Dépendances / Packages R
+## Dépendances / Packages R
 
 ```r
 install.packages(c("FisherEM", "ggplot2", "magick", "scales"))
@@ -107,7 +107,7 @@ install.packages(c("FisherEM", "ggplot2", "magick", "scales"))
 
 ---
 
-## 👨‍🔬 Encadrement
+## Encadrement
 
 - **Racim Zenati** – Étudiant à l'INP-ENSIMAG
 - Stage IPAG encadré par :
@@ -116,7 +116,7 @@ install.packages(c("FisherEM", "ggplot2", "magick", "scales"))
 
 ---
 
-## 📎 Données manipulées
+## Données manipulées
 
 - `sppart4567fwbnnCZ.RData` : spectres SDSS
 - `sppart4567scaled.RData` : spectres standardisés
@@ -126,7 +126,7 @@ install.packages(c("FisherEM", "ggplot2", "magick", "scales"))
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Tous les fichiers `.RData` sont à charger avec `load()`
 - Tous les répertoires doivent exister avant l'exécution (ex: `figures/`, `PDFs/`, etc.)
