@@ -5,7 +5,7 @@
 ![Uses FisherEM](https://img.shields.io/badge/package-FisherEM-orange)
 ![Last Updated](https://img.shields.io/badge/last%20update-July%202025-blue)
 
-# 🌌 Classification non supervisée des spectres SDSS avec FisherEM
+# Classification non supervisée des spectres SDSS avec FisherEM
 
 Ce projet s’inspire de l’étude menée par **M. Didier Fraix-Burnet et al.**, qui appliquait l’algorithme **FisherEM** à la classification automatique de spectres de galaxies en combinant modélisation par mélanges gaussiens et réduction de dimension discriminante.  
 Nous proposons ici une ré-implémentation de cette méthode en utilisant des **données standardisées** issues de la même base de données **SDSS** (Sloan Digital Sky Survey). Cette approche vise à améliorer la reproductibilité, la robustesse et la comparabilité des résultats.  
@@ -14,13 +14,13 @@ Pour plus d’informations sur l’étude originale, [voir l'article](https://ui
 ---
 
 
-## 🔍 Objectif
+## Objectif
 
 Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en identifiant des **sous-classes spectrales** selon des critères structurels et physiques (formes de raies, intensité, décalage spectral, etc.), **sans connaissance préalable des classes**.
 
 ---
 
-## 🧪 Données utilisées
+## Données utilisées
 
 - **Source** : Sloan Digital Sky Survey (SDSS DR14)
 - **Format** : Matrice `n × p`  
@@ -32,7 +32,7 @@ Déterminer des regroupements cohérents dans un jeu de spectres de galaxies, en
 
 ---
 
-## 🧠 Méthode FisherEM
+## Méthode FisherEM
 
 L’algorithme **FisherEM** repose sur trois idées clés :
 
@@ -42,7 +42,7 @@ L’algorithme **FisherEM** repose sur trois idées clés :
 
 ---
 
-## ⚙️ Pipeline de classification
+## Pipeline de classification
 
 1. **Chargement des spectres SDSS**
 2. **Application de FisherEM sur plusieurs configurations (nombre de classes K et modèles prédéfinis)**  
@@ -68,7 +68,7 @@ Pour chaque sous-classe, `mspsplit_paper()` affiche :
 
 ---
 
-## 📚 Modèles disponibles dans FisherEM
+## Modèles disponibles dans FisherEM
 
 La classification est testée sur plusieurs modèles gaussiens :
 'DkBk','DkB','DBk','DB','AkjBk','AkjB','AkBk','AkB','AB'
@@ -79,7 +79,7 @@ Ces modèles diffèrent par la structure de covariance utilisée dans l’espace
 
 ---
 
-## 📊 Résultats
+## Résultats
 
 - Production de 15 classifications (une par classe principale SDSS)
 - Visualisation de la structure interne de chaque classe via :
@@ -89,7 +89,7 @@ Ces modèles diffèrent par la structure de covariance utilisée dans l’espace
 
 ---
 
-## 🖼️ Visualisation
+## Visualisation
 
 Chaque sous-classe est représentée par :
 - Une **courbe moyenne**
@@ -100,14 +100,14 @@ Un script permet de fusionner automatiquement les 15 visualisations en une seule
 
 ---
 
-## 📦 Packages R utilisés
+## Packages R utilisés
 
 - `FisherEM` : algorithme principal
 - `scales` : transparence pour les courbes
 - `magick` : fusion d’images PDF
 ---
 
-## ✏️ Auteurs
+## Auteurs
 
 - **Racim Zenati** – Étudiant en cycle ingénieur à l’INP-ENSIMAG (2éme année licence informatique au moment du stage)
 - Stage de recherche réalisé au sein de l’**IPAG** (Institut de Planétologie et d’Astrophysique de Grenoble),  
